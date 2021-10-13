@@ -40,29 +40,22 @@
       });
     }
   </script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
   
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDmralf_71WD7DM4Ayf-KSknpqd8U3JUvA",
-      authDomain: "cafeapp-54e3c.firebaseapp.com",
-      databaseURL: "https://cafeapp-54e3c-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "cafeapp-54e3c",
-      storageBucket: "cafeapp-54e3c.appspot.com",
-      messagingSenderId: "706303097028",
-      appId: "1:706303097028:web:7814e5aa31296633607191",
-      measurementId: "G-HNRLMEFP6G"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+  <script>
+     const firebaseConfig = {
+    apiKey: "AIzaSyDmralf_71WD7DM4Ayf-KSknpqd8U3JUvA",
+    authDomain: "cafeapp-54e3c.firebaseapp.com",
+    databaseURL: "https://cafeapp-54e3c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "cafeapp-54e3c",
+    storageBucket: "cafeapp-54e3c.appspot.com",
+    messagingSenderId: "706303097028",
+    appId: "1:706303097028:web:7814e5aa31296633607191",
+    measurementId: "G-HNRLMEFP6G"
+  };
+    firebase.initializeApp(firebaseConfig);
   </script>
   
   <script src="main.dart.js" type="application/javascript"></script>
